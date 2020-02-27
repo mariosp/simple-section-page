@@ -1,0 +1,15 @@
+.home-wrapper{
+    margin-top: 10vh;
+}
+
+.home-loader-wrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+Spinner {
+    color: rgba(18, 146, 238, 255);
+}
