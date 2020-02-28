@@ -2,9 +2,11 @@ import React, {useEffect, useState} from "react";
 import "./Home.css"
 import Title from "../TitleComponent/Title";
 import {Spinner} from "reactstrap";
+import SectionBar from "../SectionBarComponent/SectionBar";
 
 const Home = () => {
     const [sections, setSections] = useState(null);
+    const [selectedSection, setSelectedSection] = useState(0);
     useEffect(() => {
         fetch(
             `https://voda-react-assessment.herokuapp.com/home`,
@@ -17,10 +19,15 @@ const Home = () => {
             .catch(error => console.log(error));
     }, []);
 
+    const handlerOnSectionchange = (section) => {
+        setSelectedSection(section);
+    };
+
     return sections?
         (
            <div className="container home-wrapper">
                <Title title={sections.description} />
+               <SectionBar selected={selectedSection} onSectionChange={handlerOnSectionchange}/>
            </div>
         )
         :
