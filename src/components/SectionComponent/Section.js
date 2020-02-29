@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "./Section.css"
-import Title from "../TitleComponent/Title";
 import SectionBar from "../SectionBarComponent/SectionBar";
 import SectionPanel from "../SectionPanelComponent/SectionPanel";
 
@@ -14,7 +13,6 @@ const Section = ({sectionData}) => {
     return(
         <>
            <SectionBar selected={selectedSection} onSectionChange={handlerOnSectionchange}/>
-           {/*<Title cssClassName={section.title && "section-title"}>{section.title}</Title>*/}
            <SectionPanel panelData={section} />
         </>
     );
