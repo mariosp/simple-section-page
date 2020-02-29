@@ -10,6 +10,7 @@ const ImageCard = ({image})=>{
                 <div className="image-caption">
                     <img src={viewIcon} className="icon-caption" alt={"view icon"}/>
                     <div className="text-caption">{image.title}</div>
+                    <hr className="line-caption"/>
                 </div>
             </div>
         </>

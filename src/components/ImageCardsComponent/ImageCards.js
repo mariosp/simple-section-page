@@ -12,14 +12,14 @@ const ImageCards = ({images}) => {
 
     return (
         <div className="row image-cards">
-            <div className="col-sm-12 col-md-4">
+            <div className="col-md-4 small-1">
                 {renderImageCards[0]}
             </div>
-            <div className="col-sm-12 col-md-4">
+            <div className="col-md-4 small">
                 {renderImageCards[1]}
                 {renderImageCards[2]}
             </div>
-            <div className="col-sm-12 col-md-4">
+            <div className="col-md-4 small">
                 {renderImageCards[3]}
                 {renderImageCards[4]}
             </div>

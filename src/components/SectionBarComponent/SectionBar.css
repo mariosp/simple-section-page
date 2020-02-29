@@ -5,7 +5,7 @@
     margin-bottom: 3vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .section-bar-wrapper{
         display: flex;
         justify-content: center;

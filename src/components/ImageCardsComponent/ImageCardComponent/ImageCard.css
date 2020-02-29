@@ -30,4 +30,14 @@
 
 .text-caption{
     color: white;
+    margin-top: 10px;
+}
+
+.line-caption{
+    border-top: 1px solid white;
+    width: 30px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 767px) {
 }
