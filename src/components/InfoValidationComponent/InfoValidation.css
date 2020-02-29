@@ -4,12 +4,21 @@
     margin-left: 15%;
 }
 
+.form-item{
+    margin-bottom: 10%;
+}
+
+.form-error{
+   color:red;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
 .input-box{
     background-color: rgba(245,245,245,255);
     border-radius: 0;
     border-style: none;
     height: 50px;
-    margin-bottom: 10%;
 }
 
 .input-box:focus{
