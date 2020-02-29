@@ -22,7 +22,13 @@ const SectionPanel = ({panelData}) => {
                         <CompanyServices headerText={panelData.graphText} stats={panelData.stats}/>
                     </div>
                     <div className="col-md-6">
-                        <InfoValidation headerText={panelData.formText} />
+                        <InfoValidation
+                            headerText={panelData.formText}
+                            phoneLabel={panelData.formLabels[0]}
+                            emailLabel={panelData.formLabels[1]}
+                            passLabel={panelData.formLabels[2]}
+                            submitBtnLabel={panelData.buttonText}
+                        />
                     </div>
                 </div>
             </>

@@ -1,0 +1,25 @@
+.info-validation-wrapper{
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.input-box{
+    background-color: rgba(245,245,245,255);
+    border-radius: 0;
+    border-style: none;
+    height: 50px;
+    margin-bottom: 10%;
+}
+
+.input-box:focus{
+    background-color: rgba(245,245,245,255);
+}
+
+.submit-btn{
+    background-color: rgba(22,109,213,255);
+    border-style: none;
+    border-radius: 2px;
+    margin: 0 auto;
+    display: block;
+}
