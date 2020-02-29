@@ -9,7 +9,7 @@ const SectionBar = ({selected, onSectionChange}) => {
                 <div className="selection-bullet" hidden={!!selected}></div>
             </div>
             <div>
-                <div className="section-button" onClick={()=> onSectionChange(1)}>Section 2</div>
+                <div className="section-button pr-0" onClick={()=> onSectionChange(1)}>Section 2</div>
                 <div className="selection-bullet" hidden={!selected}></div>
             </div>
         </div>

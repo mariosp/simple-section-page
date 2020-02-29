@@ -12,19 +12,10 @@
     }
 }
 
-Button:nth-child(1){
-    margin-right: 10px;
-}
-
 .section-button {
     padding: 10px;
     cursor: pointer;
 }
-
-/*.section-button:hover {*/
-/*    background-color: rgba(255,255,255,0);*/
-/*    color: black;*/
-/*}*/
 
 .selection-bullet {
     background-color: rgba(18, 146, 238, 255);

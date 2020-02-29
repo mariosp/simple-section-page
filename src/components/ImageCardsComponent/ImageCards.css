@@ -1,8 +1,21 @@
-.image-card {
-    height: 50%;
-    width: 100%;
+.image-cards{
+    margin-top: 5vh;
+    margin-bottom: 20vh;
 }
-.image-card:nth-child(1) {
+
+.image-card-wrapper-1{
     height: 100%;
     width: 100%;
+}
+
+.image-card-wrapper{
+    height: 50%;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.image-card-wrapper-bottom{
+    height: 50%;
+    width: 100%;
+    padding-top: 15px;
 }
