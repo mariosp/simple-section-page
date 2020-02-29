@@ -1,6 +1,6 @@
 .title{
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     color: rgba(7,30,87,255);
     font-size: 22px;
 }
@@ -9,7 +9,7 @@
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(18, 146, 238, 255);
 }
 
@@ -17,4 +17,15 @@
     .section-title{
         text-align: center;
     }
+}
+
+.section-header{
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    min-height: 100px;
+}
+
+.center{
+    text-align: center;
 }

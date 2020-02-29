@@ -1,5 +1,9 @@
 import React from "react";
+import "./SectionPanel.css"
 import ImageCards from "../ImageCardsComponent/ImageCards";
+import CompanyServices from "../CompanyServicesComponent/CompanyServices";
+import Title from "../TitleComponent/Title";
+import InfoValidation from "../InfoValidationComponent/InfoValidation";
 
 const SectionPanel = ({panelData}) => {
     const sectionId = panelData.id;
@@ -12,7 +16,15 @@ const SectionPanel = ({panelData}) => {
         :
         (
             <>
-                <h1>test 2</h1>
+                    <Title cssClassName={"section-title"}>{panelData.title}</Title>
+                <div className="section-2-wrapper row">
+                    <div className="col-md-6">
+                        <CompanyServices headerText={panelData.graphText}/>
+                    </div>
+                    <div className="col-md-6">
+                        <InfoValidation headerText={panelData.formText}/>
+                    </div>
+                </div>
             </>
         )
 
