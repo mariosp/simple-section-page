@@ -19,10 +19,10 @@ const SectionPanel = ({panelData}) => {
                     <Title cssClassName={"section-title"}>{panelData.title}</Title>
                 <div className="section-2-wrapper row">
                     <div className="col-md-6">
-                        <CompanyServices headerText={panelData.graphText}/>
+                        <CompanyServices headerText={panelData.graphText} stats={panelData.stats}/>
                     </div>
                     <div className="col-md-6">
-                        <InfoValidation headerText={panelData.formText}/>
+                        <InfoValidation headerText={panelData.formText} />
                     </div>
                 </div>
             </>

@@ -1,3 +1,15 @@
 .company-services-wrapper{
     margin-top: 5%;
+    margin-right: 10px;
 }
+
+.stat-div{
+    margin-bottom: 10%;
+}
+
+.stat-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
