@@ -2,7 +2,6 @@ import React from "react";
 import "./SectionBar.css";
 
 const SectionBar = ({selected, onSectionChange}) => {
-    console.log(selected)
     return (
         <div className="section-bar-wrapper">
             <div>

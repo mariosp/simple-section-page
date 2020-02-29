@@ -1,0 +1,8 @@
+.image-card {
+    height: 50%;
+    width: 100%;
+}
+.image-card:nth-child(1) {
+    height: 100%;
+    width: 100%;
+}

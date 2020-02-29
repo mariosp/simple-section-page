@@ -2,4 +2,19 @@
     text-align: center;
     font-weight: 400;
     color: rgba(7,30,87,255);
+    font-size: 22px;
+}
+
+.section-title{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(18, 146, 238, 255);
+}
+
+@media screen and (max-width: 600px) {
+    .section-title{
+        text-align: center;
+    }
 }
