@@ -12,7 +12,7 @@ const CompanyServices = ({headerText, stats}) => {
                         <div className="stat-title">{stat.title}</div>
                         <div className="stat-amount">{stat.amount /10} %</div>
                     </div>
-                    <ProgressBar index={index}/>
+                    <ProgressBar index={index+1} amount={stat.amount}/>
                 </div>
         )
     });

@@ -1,4 +1,26 @@
+.wrapper{
+    height: 25px;
+    width: 100%;
+    position: relative;
+    padding-top: 9px
+}
+
 .progress-bar-box{
     background-color: rgba(245,247,253,255);
     height: 5px;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top:0;
+}
+
+/*.animate-object{*/
+/*    left: 60%*/
+/*}*/
+
+.move{
+
 }
