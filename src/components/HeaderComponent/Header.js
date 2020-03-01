@@ -5,6 +5,8 @@ import SectionBar from "../SectionBarComponent/SectionBar";
 import { useHistory } from 'react-router'
 
 const Header = () => {
+    const history = useHistory();
+    const initialLocation = history.location.pathname === "/1"? 1 : 0;
     const [ sliderItems, setSliderItems ] = useState([]);
     useEffect(() => {
         fetch(
@@ -31,9 +33,8 @@ const Header = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
+    const [selectedSection, setSelectedSection] = useState(initialLocation);
 
-    const [selectedSection, setSelectedSection] = useState(0);
-    const history = useHistory();
     const handleMenuSelection = (selected) =>{
         setSelectedSection(selected);
         if(selected ===0){
