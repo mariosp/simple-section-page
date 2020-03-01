@@ -1,5 +1,5 @@
 <h1 align="center">
- Small Section Website
+ Small Section Website (With TopBar)
 </h1>
 <p align="center">React (hooks)<p>
 
