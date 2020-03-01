@@ -17,10 +17,22 @@
     top:0;
 }
 
-/*.animate-object{*/
-/*    left: 60%*/
-/*}*/
+.fill{
 
-.move{
+}
 
+.color1{
+    background: linear-gradient(90deg, rgba(59,171,173,1) 0%, rgba(76,223,209,1) 60%, rgba(88,254,238,0.7259278711484594) 100%);
+}
+
+.color2{
+    background: linear-gradient(90deg, rgba(83,140,181,1) 0%, rgba(103,170,219,1) 60%, rgba(116,192,247,0.6895133053221288) 100%);
+}
+
+.color3{
+    background: linear-gradient(90deg, rgba(185,140,130,1) 0%, rgba(222,167,156,1) 60%, rgba(250,188,175,0.6979166666666667) 100%);
+}
+
+.color4{
+    background: linear-gradient(90deg, rgba(193,132,169,1) 0%, rgba(218,151,192,1) 56%, rgba(217,168,198,0.6699054621848739) 100%);
 }
