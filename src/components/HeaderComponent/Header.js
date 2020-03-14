@@ -1,8 +1,12 @@
 import React, {useEffect, useState} from "react";
 import "./Header.css";
-import {Carousel, CarouselCaption, CarouselIndicators, CarouselItem} from "reactstrap";
+import {Carousel, CarouselIndicators, CarouselItem} from "reactstrap";
+import SectionBar from "../SectionBarComponent/SectionBar";
+import { useHistory } from 'react-router'
 
 const Header = () => {
+    const history = useHistory();
+    const initialLocation = history.location.pathname === "/1"? 1 : 0;
     const [ sliderItems, setSliderItems ] = useState([]);
     useEffect(() => {
         fetch(
@@ -15,8 +19,30 @@ const Header = () => {
             .catch(error => console.log(error));
     }, []);
 
+    const [ menuItems, setMenuItems ] = useState([]);
+    useEffect(() => {
+        fetch(
+            `https://voda-react-assessment.herokuapp.com/menu`,
+        )
+            .then(res => res.json())
+            .then(response => {
+                setMenuItems(response)
+            })
+            .catch(error => console.log(error));
+    }, []);
+
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
+    const [selectedSection, setSelectedSection] = useState(initialLocation);
+
+    const handleMenuSelection = (selected) =>{
+        setSelectedSection(selected);
+        if(selected ===0){
+            history.push("/");
+        } else {
+            history.push("/1");
+        }
+    };
 
 
     const next = () => {
@@ -53,7 +79,8 @@ const Header = () => {
         );
     });
 
-    return (
+    return (menuItems.length && sliderItems.length && (
+        <>
             <Carousel
             activeIndex={activeIndex}
             next={next}
@@ -64,7 +91,9 @@ const Header = () => {
                 {slides}
                 <CarouselIndicators items={slides} activeIndex={activeIndex} onClickHandler={setIndex} />
             </Carousel>
-    )
+            <SectionBar selected={selectedSection} barItems={[menuItems[0].title, menuItems[1].title]} onSectionChange={handleMenuSelection} topBar/>
+        </>
+    )) || null
 };
 
 export default Header;

@@ -1,0 +1,13 @@
+.button-card {
+    background-color: rgba(18, 146, 238, 255);
+    border: none;
+}
+
+.tile-card {
+    height: 100%;
+}
+
+.tile-image{
+    height: 50%;
+    object-fit: cover;
+}

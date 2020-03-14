@@ -24,3 +24,31 @@
     border-radius: 100%;
     margin: 0 auto;
 }
+
+.top-bar-wrapper{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    justify-content: flex-start;
+}
+@media screen and (max-width: 767px) {
+    .section-bar-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.top-bar-button{
+    color:white;
+    font-weight: 400;
+}
+
+.top-bar-bullet{
+    background-color: lightgreen;
+}
+
+.icon-topbar{
+    color:white;
+}
